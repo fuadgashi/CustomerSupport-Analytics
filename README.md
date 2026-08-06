@@ -36,7 +36,7 @@ without cross-referencing separate exports for tickets, calls, and CSAT.
 
 ```mermaid
 flowchart LR
-    Src[("Excel workbook\n(ticket source data)")] -->|Import, Power Query M| SM[Semantic Model\nTMDL / PBIP]
+    Src[("Help Desk / Ticketing System")] -->|Import, Power Query M| SM[Semantic Model\nTMDL / PBIP]
     SM --> FN["23 DAX functions\nperiod-window · period-average\ncomparison"]
     FN --> DAX["113 measures\nticket · SLA · call · channel\nagent · customer"]
     SM --> RLS["Row-Level Security\n(role + culture per user)"]
