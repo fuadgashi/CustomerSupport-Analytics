@@ -83,6 +83,15 @@ flowchart LR
   instead of quietly falling back to English. Full write-up:
   [Dynamic Titles & Localization](docs/dynamic-titles.md).
 
+## Related projects
+
+Part of a set of Power BI solutions built on the same DAX time-intelligence library and dynamic-localization architecture:
+
+- [Sales Performance Analytics](https://github.com/fuadgashi/Sales-Performance-Analytics)
+- [Inventory Optimization and Replenishment Analytics](https://github.com/fuadgashi/Inventory-Optimization-and-Replenishment-Analytics)
+- [Strategic Portfolio Analytics](https://github.com/fuadgashi/Strategic-Portfolio-Analytics)
+- [Purchasing and Supplier Analytics](https://github.com/fuadgashi/Purchasing-and-Supplier-Analytics)
+
 ## License
 
 [MIT](LICENSE) — this repository (documentation, DAX/architecture write-ups) may be
@@ -91,5 +100,5 @@ project files, which remain private.
 
 ## Author
 
-**Fuad Gashi** — Power BI / Business Intelligence developer.
-[GitHub](https://github.com/fuadgashi)
+**Fuad Gashi** — Senior Power BI Consultant.
+[GitHub](https://github.com/fuadgashi) · [Upwork](https://www.upwork.com/freelancers/~010e387a58063279a5) · [LinkedIn](https://www.linkedin.com/in/fuad-gashi-b81268110/)
