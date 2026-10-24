@@ -1,6 +1,6 @@
 # DAX Function Library
 
-23 DAX user-defined functions carry every time-window, period-average, and
+24 DAX user-defined functions carry every time-window, period-average, and
 current-vs-prior comparison in the model — measures compose them rather than
 hand-rolling `DATEADD`/`DATESYTD` per KPI. Three families:
 
