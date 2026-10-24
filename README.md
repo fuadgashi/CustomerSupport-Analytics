@@ -37,7 +37,7 @@ without cross-referencing separate exports for tickets, calls, and CSAT.
 ```mermaid
 flowchart LR
     Src[("Help Desk / Ticketing System")] -->|Import, Power Query M| SM[Semantic Model\nTMDL / PBIP]
-    SM --> FN["23 DAX functions\nperiod-window · period-average\ncomparison"]
+    SM --> FN["24 DAX functions\nperiod-window · period-average\ncomparison"]
     FN --> DAX["113 measures\nticket · SLA · call · channel\nagent · customer"]
     SM --> RLS["Row-Level Security\n(role + culture per user)"]
     DAX --> RPT[Report — 9 pages]
@@ -49,7 +49,7 @@ flowchart LR
 ## Tech stack
 
 - **Power BI** — authored in [PBIP](https://learn.microsoft.com/power-bi/developer/projects/projects-overview) (TMDL) format for source control
-- **DAX user-defined functions** — a 23-function reusable time-intelligence and comparison library (see [DAX Function Library](docs/dax-functions.md))
+- **DAX user-defined functions** — a 24-function reusable time-intelligence and comparison library (see [DAX Function Library](docs/dax-functions.md))
 - **DAX measures** — 113 measures across 9 functional families, composed from that library (see [DAX Measure Catalog](docs/dax-measures.md))
 - **Power Query (M)** — Excel-source import and shaping
 - **Row-Level Security** — role- and culture-based, resolved from a single access-control table
@@ -60,14 +60,14 @@ flowchart LR
 | Doc | Contents |
 |---|---|
 | [Data Model](docs/data-model.md) | Star schema, ER diagram, table catalog, relationships, and RLS |
-| [DAX Function Library](docs/dax-functions.md) | All 23 reusable functions — period-window, period-average/extreme, and comparison families — with full DAX bodies |
+| [DAX Function Library](docs/dax-functions.md) | All 24 reusable functions — period-window, period-average/extreme, and comparison families — with full DAX bodies |
 | [DAX Measure Catalog](docs/dax-measures.md) | Ticket, SLA, quality, call, channel, agent, and customer measures, built on the function library |
 | [Dynamic Titles & Localization](docs/dynamic-titles.md) | The `Security` → `Labels` → `Dynamic Labels` chain in full: the `PageKey` band scheme, every label family worked through, the exact report-visual binding (verified against the actual PBIR JSON), and what changes to add a language |
 | [Report Tour](docs/report-pages.md) | Page-by-page walkthrough of all 9 pages |
 
 ## Highlights worth a closer look
 
-- **A function library, not copy-paste DAX.** 23 DAX user-defined functions —
+- **A function library, not copy-paste DAX.** 24 DAX user-defined functions —
   period-window (`YearToDay`, `PrevYear`, `PrevMonth`, `TwelMonth`, …),
   period-average (`AvgWeek`, `AvgMonth`, …), and comparison (`IndexDif`, `IndexQuot`,
   `Varianc`, …) — mean every KPI gets a full current/prior/CY/CM comparison family
@@ -85,7 +85,7 @@ flowchart LR
 
 ## Related projects
 
-Part of a set of Power BI solutions built on the same DAX time-intelligence library and dynamic-localization architecture:
+Part of a set of Power BI solutions built with the same approach — a reusable DAX time-intelligence function library and dynamic, bilingual report titles:
 
 - [Sales Performance Analytics](https://github.com/fuadgashi/Sales-Performance-Analytics)
 - [Inventory Optimization and Replenishment Analytics](https://github.com/fuadgashi/Inventory-Optimization-and-Replenishment-Analytics)
